@@ -24,7 +24,7 @@ const Header = () => {
     .map((item) => ({name: item.name}));
 
   return (
-    <div className="border flex items-center justify-between border-b-2 px-15 w-full p-6">
+    <div className="border  flex items-center justify-between border-b-4 px-15 w-full p-6">
       <div>
         <Logo />
       </div>
@@ -33,7 +33,7 @@ const Header = () => {
         {mainItems.map((item, idx) => (
           <p
             key={idx}
-            className="text-xl cursor-pointer hover:text-gray-500 transition"
+            className="text-2xl cursor-pointer hover:text-gray-500 transition"
           >
             {item.name}
           </p>
@@ -44,7 +44,7 @@ const Header = () => {
         {logItems.map((item, idx) => (
           <p
             key={idx}
-            className="text-xl cursor-pointer hover:text-gray-500 transition"
+            className="text-2xl cursor-pointer hover:text-gray-500 transition"
           >
             {item.name}
           </p>
