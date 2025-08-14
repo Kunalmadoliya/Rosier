@@ -13,7 +13,7 @@ const Marquee = () => {
         }}
       >
         {/* First copy */}
-        <div className="relative flex">
+        <div className="relative   flex">
           <motion.span className="absolute inset-0 text-transparent font-[950] text-[90px] uppercase tracking-widest whitespace-nowrap [-webkit-text-stroke:8px_black]">
             AMAZON · FLIPKART · Rosier · SWIGGY INSTAMART · BIGBASKET · Rosier &nbsp;
           </motion.span>

@@ -1,9 +1,11 @@
-import React from 'react'
+import logo from "/Logo_Green.avif"
 
 const Logo = () => {
   return (
     <>
-      <h1 className="text-5xl sm:text-1xl kanit-semibold">Rosier</h1>
+     <div>
+      <img className="h-20" src={logo} alt="rosier" />
+     </div>
     </>
   )
 }

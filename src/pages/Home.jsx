@@ -1,4 +1,4 @@
-import {Header, Slider, Marquee} from "../index";
+import {Header, Slider, Marquee,Category} from "../index";
 
 const Home = () => {
   return (
@@ -13,6 +13,10 @@ const Home = () => {
             <Marquee />
           </div>
         </div>
+      </section>
+      <Category/>
+      <section>
+
       </section>
     </>
   );

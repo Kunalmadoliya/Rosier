@@ -24,7 +24,7 @@ const Header = () => {
     .map((item) => ({name: item.name}));
 
   return (
-    <div className="border  flex items-center justify-between border-b-4 px-15 w-full p-6">
+    <div className="border text-[var(--secondary-color)]  flex items-center justify-between border-b-4 px-15 w-full py-3 ">
       <div>
         <Logo />
       </div>
