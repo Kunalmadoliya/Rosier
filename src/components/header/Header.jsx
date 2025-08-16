@@ -1,53 +1,51 @@
 import React from "react";
-import {Logo} from "../../index";
+import { Logo } from "../../index";
+import { Search, User, ShoppingBag } from "lucide-react"; // Example icons
 
 const Header = () => {
   const navItems = [
-    {name: "Shop", show: true},
-    {name: "Our Story", show: true},
-    {name: "Community", show: true},
-    {name: "Contact", show: true},
-    {name: "Login", show: true},
-    {name: "Cart", show: true},
+    { name: "Home", show: true },
+    { name: "Shop", show: true },
+    { name: "B.Y.O.B", show: true },
+    { name: "Our Story", show: true },
+    { name: "Lab Reports", show: true },
   ];
 
-  const mainItems = navItems
-    .filter(
-      (item) =>
-        item.show &&
-        ["Shop", "Our Story", "Community", "Contact"].includes(item.name)
-    )
-    .map((item) => ({name: item.name}));
-
-  const logItems = navItems
-    .filter((item) => item.show && ["Login", "Cart"].includes(item.name))
-    .map((item) => ({name: item.name}));
+  const logItems = [
+    { icon: <Search size={22} />, name: "Search" },
+    { icon: <User size={22} />, name: "User" },
+    { icon: <ShoppingBag size={22} />, name: "Cart" },
+  ];
 
   return (
-    <div className="border text-[var(--secondary-color)]  flex items-center justify-between border-b-4 px-15 w-full py-3 ">
-      <div>
-        <Logo />
-      </div>
-
-      <div className="flex gap-10  kanit-semibold">
-        {mainItems.map((item, idx) => (
+    <div className="grid grid-cols-3 items-center border w-full py-3 px-15 text-[var(--secondary-color)]">
+      {/* Left Nav */}
+      <div className="flex justify-start gap-9">
+        {navItems.map((item, idx) => (
           <p
             key={idx}
-            className="text-2xl cursor-pointer hover:text-gray-500 transition"
+            className="text-base cursor-pointer hover:text-gray-500 transition"
           >
             {item.name}
           </p>
         ))}
       </div>
 
-      <div className="flex gap-5  kanit-semibold">
+      {/* Center Logo */}
+      <div className="flex justify-center">
+        <Logo />
+      </div>
+
+      {/* Right Icons */}
+      <div className="flex justify-end gap-8">
         {logItems.map((item, idx) => (
-          <p
+          <button
             key={idx}
-            className="text-2xl cursor-pointer hover:text-gray-500 transition"
+            aria-label={item.name}
+            className="cursor-pointer text-base hover:text-gray-500 transition"
           >
-            {item.name}
-          </p>
+            {item.icon}
+          </button>
         ))}
       </div>
     </div>
