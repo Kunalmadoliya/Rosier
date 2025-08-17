@@ -1,11 +1,11 @@
-import {Header, Slider, Marquee, Category} from "../index";
+import {Header, Slider, Marquee, Category ,BestSellers} from "../index";
 
 const Home = () => {
   return (
     <>
       <section>
         <div className="h-full w-full border">
-          <div className=" flex flex-col items-center space-y-2">
+          <div className=" flex lg:h-screen flex-col items-center space-y-2 lg:space-y-2">
             <Header />
             <Slider />
           </div>
@@ -14,8 +14,14 @@ const Home = () => {
           </div>
         </div>
       </section>
-      <Category />
-      <section></section>
+      
+      <section >
+        <Category />
+      </section>
+
+      <section>
+        <BestSellers/>
+      </section>
     </>
   );
 };

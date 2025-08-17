@@ -12,7 +12,7 @@ const Category = () => {
 
   return (
     <Container>
-      <div className="space-y-3">
+      <div className="lg:space-y-10 space-y-3">
         {/* Heading */}
         <div className="w-full flex justify-center">
           <h1 className="text-3xl sm:text-base text-[var(--secondary-color)] lg:text-5xl py-10 font-bold">
