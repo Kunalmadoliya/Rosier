@@ -5,5 +5,15 @@ import Header from "./components/header/Header";
 import Marquee from "./components/ui/Marquee";
 import Category from "./pages/Category";
 import BestSellers from "./pages/BestSellers";
+import Carousel from "./components/ui/Carousel";
 
-export {Container, Logo, Slider,Header, Marquee , Category , BestSellers};
+export {
+  Container,
+  Logo,
+  Slider,
+  Header,
+  Marquee,
+  Category,
+  BestSellers,
+  Carousel,
+};

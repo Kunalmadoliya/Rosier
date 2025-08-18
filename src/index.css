@@ -4,6 +4,7 @@
 @import 'swiper/css/navigation';
 @import 'swiper/css/pagination';
 
+
 @layer utilities {
   .retro-text {
     @apply font-extrabold uppercase text-[80px] tracking-wide;
