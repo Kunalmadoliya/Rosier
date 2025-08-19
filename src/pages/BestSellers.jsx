@@ -1,49 +1,57 @@
-import { Carousel } from "../index";
+import {Carousel} from "../index";
 
 const products = [
   {
-    name: "Candle 1",
-    price: "₹499",
-    image: "/candle1.jpg",
+    image: "/rosierCarousel.webp",
+    name: "Gir Cow A2 Ghee - Made From Curd",
+    rating: 4.9,
+    reviews: "5 Star",
+    price: 1350.0,
+    oldPrice: null,
   },
   {
-    name: "Candle 2",
-    price: "₹599",
-    image: "/candle2.jpg",
+    image: "/khapliCarousel.webp",
+    name: "Khapli (Emmer) Wheat Atta",
+    rating: 4.59,
+    reviews: "5 Star",
+    price: 469.0,
+    oldPrice: 499.0,
   },
   {
-    name: "Candle 3",
-    price: "₹699",
-    image: "/candle3.jpg",
+    image: "/honey500front.webp",
+    name: "Wild Forest Honey",
+    rating: 4.63,
+    reviews: "5 Star",
+    price: 499.0,
+    oldPrice: 589.0,
   },
   {
-    name: "Candle 4",
-    price: "₹799",
-    image: "/candle4.jpg",
+    image: "/oilCarousel.webp",
+    name: "Stone Pressed Black Mustard Oil",
+    rating: 4.9,
+    reviews: "5 Star",
+    price: 390.0,
+    oldPrice: null,
   },
 ];
 
 const BestSellers = () => {
   return (
-    <div className="h-screen ">
+    <div className="h-screen">
       {/* Decorative Wave */}
       <div className="mt-15">
         <img src="/green_wave.png" alt="rosier-wave" />
       </div>
-
       {/* Best Sellers Section */}
-      <div className="bg-[var(--primary-color)] h-full flex justify-center ">
-        <div className="w-full max-w-7xl">
-          <p className="p-10 text-2xl sm:text-base text-[var(--secondary-color)] lg:text-4xl py-15 font-bold text-center">
+      <div className="bg-[var(--primary-color)] h-full flex  justify-center  ">
+        <div className="w-full max-w-7xl mt-15">
+          <p className=" text-3xl sm:text-base text-[var(--secondary-color)] lg:text-[2.7rem] flex items-center justify-center font-bold ">
             BEST SELLERS
           </p>
-
-          <div className="mt-5">
-
           <Carousel title="" products={products} perView={3} />
-          </div>
         </div>
       </div>
+      
     </div>
   );
 };

@@ -7,18 +7,13 @@ import "swiper/css/pagination";
 const Slider = () => {
   const lapSlider = [
     {url: "/pic1.webp"},
-    {url: "/khapli_square.webp"},
+    {url: "/khapli_new_1_copy (1).webp"},
     {url: "/Web_Honey_Banner.webp"},
   ];
 
-  const mobileSlider = [
-    {url: "/3_Mobile_Banner.webp"},
-    {url: "/mobile1.webp"},
-    {url: "/Mobile_Banner-3.webp"},
-  ];
 
   return (
-    <div className="w-[90%] h-140 md:h-[400px] lg:h-[670px] rounded-3xl border-2 overflow-hidden">
+    <div className="w-[98%] h-140 md:h-[400px] lg:h-[670px] rounded-xl border-2 overflow-hidden">
       <Swiper
         modules={[Pagination, Autoplay]}
         pagination={{clickable: true}}
