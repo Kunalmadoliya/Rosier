@@ -74,7 +74,7 @@ function Carousel({ products = [], perView = 3, title = "" }) {
                 alt={product.name}
                 className="w-full h-48 sm:h-56 md:h-64 object-contain object-center"
               />
-              <div className="p-4 text-center">
+              <div className=" text-center">
                 <h3 className="text-sm sm:text-base md:text-lg font-semibold">
                   {product.name}
                 </h3>
