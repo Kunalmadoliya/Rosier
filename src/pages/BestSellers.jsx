@@ -54,7 +54,7 @@ const BestSellers = () => {
           <Carousel title="" products={products} perView={3} />
 
           {/* Button */}
-          <div className="w-full flex items-center justify-center lg:py-6">
+          <div className="w-full flex items-center justify-center ">
             <button className="border px-8 py-4 rounded-full cursor-pointer text-white bg-[var(--secondary-color)] hover:scale-105 transition-transform">
               VIEW ALL
             </button>
@@ -63,7 +63,7 @@ const BestSellers = () => {
       </div>
 
       {/* Curved marquee banner */}
-      <div className="bg-[var(--secondary-color)] p-3 h-13 ">
+      <div className="bg-[var(--secondary-color)] p-3 h-13 lg:h-30">
         <CurvedLoop
           marqueeText="THE TASTE OF NATURE ✦ IT'S FRESH ✦ WE ARE REVIVING THE TRADITION ✦"
           speed={0.8}
