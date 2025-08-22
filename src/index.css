@@ -19,7 +19,8 @@
 
 :root {
   --primary-color: rgb(232 233 224);
-  --secondary-color: #2f3f27;
+  --secondary-color: rgb(47, 63, 39);
+  --bg-dark-color:rgb(46 62 39);
   --text-color: rgb(53, 30, 48);
 }
 

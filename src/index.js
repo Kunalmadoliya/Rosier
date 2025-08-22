@@ -6,6 +6,8 @@ import Marquee from "./components/ui/Marquee";
 import Category from "./pages/Category";
 import BestSellers from "./pages/BestSellers";
 import Carousel from "./components/ui/Carousel";
+import ScrollFloat from "./components/ui/ScrollFloat.jsx";
+import CurvedLoop from "./components/ui/CurvedLoop.jsx";
 
 export {
   Container,
@@ -16,4 +18,6 @@ export {
   Category,
   BestSellers,
   Carousel,
+  ScrollFloat,
+  CurvedLoop
 };

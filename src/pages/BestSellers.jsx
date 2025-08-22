@@ -1,4 +1,4 @@
-import {Carousel} from "../index";
+import { Carousel, CurvedLoop } from "../index";
 
 const products = [
   {
@@ -37,21 +37,42 @@ const products = [
 
 const BestSellers = () => {
   return (
-    <div className="h-screen">
-      {/* Decorative Wave */}
-      <div className="mt-15">
-        <img src="/green_wave.png" alt="rosier-wave" />
+    <div className="h-auto">
+      {/* Top decorative wave */}
+      <div className="mt-[60px]">
+        <img src="/green_wave.png" alt="rosier-wave" className="w-full" />
       </div>
-      {/* Best Sellers Section */}
-      <div className="bg-[var(--primary-color)] h-full flex  justify-center  ">
-        <div className="w-full max-w-7xl mt-15">
-          <p className=" text-3xl sm:text-base text-[var(--secondary-color)] lg:text-[2.7rem] flex items-center justify-center font-bold ">
+
+      {/* Best sellers section */}
+      <div className="bg-[var(--primary-color)] h-full flex justify-center">
+        <div className="w-full max-w-7xl py-12">
+          <p className="text-center text-[var(--secondary-color)] font-bold text-3xl lg:text-[2.7rem]">
             BEST SELLERS
           </p>
+
+          {/* Carousel */}
           <Carousel title="" products={products} perView={3} />
+
+          {/* Button */}
+          <div className="w-full flex items-center justify-center lg:py-6">
+            <button className="border px-8 py-4 rounded-full cursor-pointer text-white bg-[var(--secondary-color)] hover:scale-105 transition-transform">
+              VIEW ALL
+            </button>
+          </div>
         </div>
       </div>
-      
+
+      {/* Curved marquee banner */}
+      <div className="bg-[var(--secondary-color)] p-3 h-13 ">
+        <CurvedLoop
+          marqueeText="THE TASTE OF NATURE ✦ IT'S FRESH ✦ WE ARE REVIVING THE TRADITION ✦"
+          speed={0.8}
+          curveAmount={0}
+          direction="right"
+          variant="arc"
+          className="fill-white text-[6rem] md:text-[3rem]  font-semibold tracking-wide"
+        />
+      </div>
     </div>
   );
 };

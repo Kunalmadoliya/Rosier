@@ -1,4 +1,11 @@
-import {Header, Slider, Marquee, Category ,BestSellers} from "../index";
+import {
+  Header,
+  Slider,
+  Marquee,
+  Category,
+  BestSellers,
+  ScrollFloat,
+} from "../index";
 
 const Home = () => {
   return (
@@ -14,13 +21,13 @@ const Home = () => {
           </div>
         </div>
       </section>
-      
-      <section >
+
+      <section>
         <Category />
       </section>
 
       <section>
-        <BestSellers/>
+        <BestSellers />
       </section>
     </>
   );
