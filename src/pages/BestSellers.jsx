@@ -63,14 +63,14 @@ const BestSellers = () => {
       </div>
 
       {/* Curved marquee banner */}
-      <div className="bg-[var(--secondary-color)] p-3 h-13 lg:h-30">
+      <div className="bg-[var(--secondary-color)] py-10 h-5 lg:h-25 lg:py-2">
         <CurvedLoop
           marqueeText="THE TASTE OF NATURE ✦ IT'S FRESH ✦ WE ARE REVIVING THE TRADITION ✦"
           speed={0.8}
           curveAmount={0}
           direction="right"
           variant="arc"
-          className="fill-white text-[6rem] md:text-[3rem]  font-semibold tracking-wide"
+          className="fill-white text-[15rem] md:text-[4rem]  font-semibold tracking-wide"
         />
       </div>
     </div>
