@@ -34,7 +34,7 @@ function Carousel({ products = [], perView = 3, title = "" }) {
       {
         breakpoint: 1280, // xl
         settings: {
-          slidesToShow: Math.min(perView, 3),
+          slidesToShow: Math.min(perView, 4),
           centerPadding: "30px",
         },
       },

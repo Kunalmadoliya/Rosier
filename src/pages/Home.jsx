@@ -5,6 +5,8 @@ import {
   Category,
   BestSellers,
   ScrollFloat,
+  ScrollReveal,
+  Reviews,
 } from "../index";
 
 const Home = () => {
@@ -28,6 +30,9 @@ const Home = () => {
 
       <section>
         <BestSellers />
+      </section>
+      <section>
+        <Reviews />
       </section>
     </>
   );

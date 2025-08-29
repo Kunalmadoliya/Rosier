@@ -31,6 +31,10 @@ body {
 
 }
 
+.stroke-text {
+  -webkit-text-stroke: 5px rgb(255, 255, 255); /* Outline thickness & color */
+  paint-order: stroke fill;       /* Makes stroke appear outside */
+}
 
 .kanit-thin {
   font-family: "Kanit", sans-serif;

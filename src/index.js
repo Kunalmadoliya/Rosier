@@ -8,6 +8,10 @@ import BestSellers from "./pages/BestSellers";
 import Carousel from "./components/ui/Carousel";
 import ScrollFloat from "./components/ui/ScrollFloat.jsx";
 import CurvedLoop from "./components/ui/CurvedLoop.jsx";
+import Reviews from "./pages/Reviews.jsx";
+import ScrollReveal from "./components/ui/ScrollReveal.jsx";
+import ScrollAnimate from "./components/ui/ScrollAnimate.jsx";
+ScrollAnimate
 
 export {
   Container,
@@ -19,5 +23,8 @@ export {
   BestSellers,
   Carousel,
   ScrollFloat,
-  CurvedLoop
+  CurvedLoop,
+  Reviews,
+  ScrollReveal,
+  ScrollAnimate
 };
