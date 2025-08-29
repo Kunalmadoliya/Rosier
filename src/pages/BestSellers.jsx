@@ -52,7 +52,7 @@ const BestSellers = () => {
             </p>
 
             {/* Carousel */}
-            <Carousel title="" products={products} />
+            <Carousel  products={products} />
 
             {/* Button */}
             <div className="w-full flex items-center justify-center  h-5 lg:h-10">

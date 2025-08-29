@@ -68,11 +68,11 @@ function Carousel({products = [], perView = 3, title = ""}) {
       <Slider {...settings}>
         {products.map((product, index) => (
           <div key={index} className="px-5 sm:px-4">
-            <div className="bg-white py-1 h-90 w-70 rounded-xl border shadow-lg overflow-hidden mx-auto">
+            <div className="bg-white py-1 h-90 w-70 lg:w-90 rounded-xl border shadow-lg overflow-hidden mx-auto">
               <img
                 src={product.image}
                 alt={product.name}
-                className="w-full lg:h-68   py-2 md:h-64 lg:object-contain object-center"
+                className="w-full lg:h-68  py-2 md:h-64 lg:object-contain object-center"
               />
               <div className=" text-center">
                 <h3 className="text-sm sm:text-base md:text-lg font-semibold">
