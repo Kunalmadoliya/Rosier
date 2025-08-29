@@ -1,10 +1,10 @@
 import Slider from "react-slick";
 import "slick-carousel/slick/slick.css";
 import "slick-carousel/slick/slick-theme.css";
-import { FaChevronLeft, FaChevronRight } from "react-icons/fa";
+import {FaChevronLeft, FaChevronRight} from "react-icons/fa";
 
-function Carousel({ products = [], perView = 3, title = "" }) {
-  const NextArrow = ({ onClick }) => (
+function Carousel({products = [], perView = 3, title = ""}) {
+  const NextArrow = ({onClick}) => (
     <button
       onClick={onClick}
       className="absolute hidden lg:block top-1/2 -right-4 -translate-y-1/2 z-10 bg-white shadow-lg rounded-full p-3 hover:bg-gray-200"
@@ -13,7 +13,7 @@ function Carousel({ products = [], perView = 3, title = "" }) {
     </button>
   );
 
-  const PrevArrow = ({ onClick }) => (
+  const PrevArrow = ({onClick}) => (
     <button
       onClick={onClick}
       className="absolute hidden lg:block top-1/2 -left-4 -translate-y-1/2 z-10 bg-white shadow-lg rounded-full p-3 hover:bg-gray-200"
@@ -67,12 +67,12 @@ function Carousel({ products = [], perView = 3, title = "" }) {
       {title && <h2 className="text-center text-xl font-bold mb-6">{title}</h2>}
       <Slider {...settings}>
         {products.map((product, index) => (
-          <div key={index} className="px-2 sm:px-4">
-            <div className="bg-white p-5 w-full max-w-[280px] sm:max-w-[320px] md:max-w-[340px] rounded-xl border shadow-lg overflow-hidden mx-auto">
+          <div key={index} className="px-5 sm:px-4">
+            <div className="bg-white py-1 h-90 w-70 rounded-xl border shadow-lg overflow-hidden mx-auto">
               <img
                 src={product.image}
                 alt={product.name}
-                className="w-full h-48 sm:h-56 md:h-64 object-contain object-center"
+                className="w-full lg:h-68   py-2 md:h-64 lg:object-contain object-center"
               />
               <div className=" text-center">
                 <h3 className="text-sm sm:text-base md:text-lg font-semibold">

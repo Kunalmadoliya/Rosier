@@ -45,7 +45,7 @@ const BestSellers = () => {
         </div>
 
         {/* Best sellers section */}
-        <div className="bg-[var(--primary-color)] h-full flex justify-center">
+        <div className="bg-[var(--primary-color)]  h-138 lg:h-full flex justify-center ">
           <div className="w-full max-w-7xl py-12">
             <p className="text-center text-[var(--secondary-color)] font-bold text-3xl lg:text-[2.7rem]">
               BEST SELLERS
@@ -55,8 +55,8 @@ const BestSellers = () => {
             <Carousel title="" products={products} />
 
             {/* Button */}
-            <div className="w-full flex items-center justify-center ">
-              <button className="border px-8 py-4 rounded-full cursor-pointer text-white bg-[var(--secondary-color)] hover:scale-105 transition-transform">
+            <div className="w-full flex items-center justify-center  h-5 lg:h-10">
+              <button className=" px-8 py-4 rounded-full cursor-pointer text-white bg-[var(--secondary-color)] hover:scale-105 transition-transform">
                 VIEW ALL
               </button>
             </div>
